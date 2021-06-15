@@ -1,11 +1,11 @@
 //Numerical Spiral Pattern.
-
- 1  2  3  4 5
-16 17 18 19 6
-15 24 25 20 7
-14 23 22 21 8
-13 12 11 10 9
-
+/*
+  1  2  3  4  5
+ 16  17  18  19  6
+ 15  24  25  20  7
+ 14  23  22  21  8
+ 13  12  11  10  9
+*/
 #include<stdio.h>
 int main()
 {
@@ -14,17 +14,17 @@ int main()
  m =(l=n);
  int a[m][n] ;
  int row = 0 , col = 0 ;
- 
+ int i,j;
  while(k <= l*l )
  {
  
-        for(int i = col ; i < n; i ++) 
+        for(i = col ; i < n; i ++) 
         {
          a[row][i] = k++;
          
   }
   row++;
-  for(int i = row; i < m ; i ++)
+  for(i = row; i < m ; i ++)
   {
    a[i][n-1] =k ++;
    
@@ -32,7 +32,7 @@ int main()
   n --;
   if(row < m)
   {
-   for(int i = n - 1; i >= col ; i --)
+   for(i = n - 1; i >= col ; i --)
    { a[m-1][i] = k ++; 
  
    }
@@ -40,7 +40,7 @@ int main()
   m--;
   if(col < n)
   {
-   for(int i = m-1; i >= row ; i --)
+   for(i = m-1; i >= row ; i --)
    {
    a[i][col] = k ++;
    }
@@ -48,10 +48,10 @@ int main()
   col ++;
  
  }
- for(int i = 0 ; i < l ; i ++)
+ for(i = 0 ; i < l ; i ++)
  {
-  for(int j = 0 ; j < l ; j ++)
-  printf("%d ",a[i][j]);
+  for(j = 0 ; j < l ; j ++)
+  printf(" %d ",a[i][j]);
   printf("\n");
  }
 }
