@@ -28,7 +28,7 @@ int main()
 	while(low<=high)
 	{
 		mid=(low+high)/2;
-		if(a[mid]=item)
+		if(a[mid]==item)
 		{
 			found=true;
 			break;
@@ -41,7 +41,7 @@ int main()
 		{
 			high=mid-1;
 		}
-		
+	}
 		//OUTPUT
 		if(found==true)
 		{
@@ -51,7 +51,7 @@ int main()
 		{
 			printff("Not found");
 		}
-	}
+	
 	getch();
 	return 0;
 }
