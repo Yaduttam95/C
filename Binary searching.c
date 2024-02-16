@@ -49,7 +49,7 @@ int main()
 		}
 		else
 		{
-			printff("Not found");
+			printf("Not found");
 		}
 	
 	getch();
